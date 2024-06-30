@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("displaying saved recipes")
       displaySavedRecipes(email);
     } else {
-      alert("No user logged in");
+      window.location.href = "login.html";
     }
   });
 });
