@@ -1646,9 +1646,7 @@ function saveRecipe(recipe) {
           console.error("Error retrieving user:", event.target.error);
         };
       });
-    } else {
-      alert("No user logged in");
-    }
+    } 
   });
 }
 
@@ -1676,8 +1674,6 @@ function removeRecipe(recipeName) {
           console.error("Error retrieving user:", event.target.error);
         };
       });
-    } else {
-      alert("No user logged in");
-    }
+    } 
   });
 }
