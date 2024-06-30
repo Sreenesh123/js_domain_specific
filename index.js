@@ -1646,7 +1646,9 @@ function saveRecipe(recipe) {
           console.error("Error retrieving user:", event.target.error);
         };
       });
-    } 
+    } else {
+       window.location.href = "login.html";
+    }
   });
 }
 
@@ -1674,6 +1676,8 @@ function removeRecipe(recipeName) {
           console.error("Error retrieving user:", event.target.error);
         };
       });
-    } 
+    } else {
+       window.location.href = "login.html";
+    }
   });
 }
