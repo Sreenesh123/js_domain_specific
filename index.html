@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <button id="toggle-playlist" class="toggle-playlist"><i class="bi bi-list"></i></button>
+        
+        <div class="menu closed">
+            
+            <h1 class="title">Recipe Quest</h1>
+            <div class="playlist">
+                <h4 id="home-link"><span></span><i class="bi bi-person-fill"></i></i>Home</h4>
+<h4 id="saved-link"><span></span><i class="bi bi-person-fill"></i><a href="savedrecipes.html">Saved Recipes</a></h4>
+
+
+            </div>
+            <div class="filter-container">
+        <h1>Recipe Filter</h1>
+        <div class="filters">
+            <select id="cuisine">
+                <option value="">Cuisines</option>
+                <option value="Italian">Italian</option>
+                <option value="Asian">Asian</option>
+                <option value="Indian">Indian</option>
+                <option value="American">American</option>
+                
+            </select>
+            
+            <select id="maxpreptime">
+                <option value="">Prep time</option>
+                <option value="15">0 - 15 min</option>
+                <option value="30">16 - 30 min</option>
+                <option value="45">31 - 45 min</option>
+                <option value="60">46 - 60 min</option>
+            </select>
+            
+            
+            
+            <button id="applyfilters">Apply</button>
+        </div> 
+           
+        </div>
+        </div>
+        
+         <div id="intropg"> 
+                <div class="title2">
+  <span class="RECIPE">RECIPE</span>
+  <span class="QUEST">QUEST</span>
+</div>
+
+            <nav>
+                <ul>
+                    <li>EXPLORE<span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="user">
+                    <i class="bi bi-person-circle " id="user-icon"></i>
+                     <button id="logout-button" class="logout-hidden">Logout</button>
+                </div>
+            </nav></div>
+        <div class="playing_menu">
+           
+           
+            <div class="container">
+        <h2>Choose Your Ingredients</h2>
+        <div class="ingredient-align">
+        <div id="ingredient-gallery"></div>
+        <img src="media/nuts2.png" alt="">
+        </div>
+        <button id="submit-button">Find Recipes</button>
+        
+       
+         
+    </div>
+    <div id="recipe-detail" class="recipe-detail">
+                <button id="close-detail">X</button>
+                <div id="recipe-content"></div>
+                
+
+    <div id="rating-review-section">
+        <h3>Rate this Recipe</h3>
+        <div class="rating-stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <textarea id="review-text" placeholder="Write your review here..."></textarea>
+        <button id="submit-review">Submit</button>
+    </div>
+    <div id="reviews-list">
+        <h3>Reviews</h3>
+    </div>
+            </div>
+        </div>
+        <div class=" grid3">
+            <h2>Try making these Recipes</h2>
+             <div id="recipe-list">
+        </div>
+        
+        </div>
+        <div class=addrecipe>
+            <h2>Add Your Recipe</h2>
+             <div id=newrecipe>
+       <form id="new-recipe-form">    
+     <label for="recipe-name">Recipe Name:</label>
+    <input type="text" id="recipe-name" name="recipe-name" required><br>
+    
+    <label for="recipe-ingredients">Ingredients (comma-separated):</label>
+    <input type="text" id="recipe-ingredients" name="recipe-ingredients" required><br>
+    
+    <label for="recipe-image">Image URL:</label>
+    <input type="text" id="recipe-image" name="recipe-image"><br>
+    
+    <label for="recipe-procedure">Procedure:</label>
+    <textarea id="recipe-procedure" name="recipe-procedure" required></textarea><br>
+    
+    <label for="recipe-cuisine">Cuisine:</label>
+    <input type="text" id="recipe-cuisine" name="recipe-cuisine"><br>
+        
+    <label for="recipe-prep-time">Prep Time:</label>
+    <input type="text" id="recipe-prep-time" name="recipe-prep-time"><br>
+    
+    <label for="recipe-total-time">Total Time:</label>
+    <input type="text" id="recipe-total-time" name="recipe-total-time"><br>
+        
+    <label for="recipe-diet">Diet:</label>
+    <input type="text" id="recipe-diet" name="recipe-diet"><br>
+    
+    
+    <button type="submit">Add Recipe</button>
+    </form> 
+         <img src="media/chef.png" alt=""> 
+        </div>
+        
+        </div>
+    </header>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="savedrecipes.js"></script>
+    
+</body>
+</html>
+

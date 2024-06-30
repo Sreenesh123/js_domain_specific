@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body style="background-image: url('bglogin3.jpg');">
+    
+    
+   <div id="loginformdiv">
+
+   <form id="loginform">
+
+       <h1>Login</h1>
+
+       <div class="input">
+           <label class="textlabel"for ="username"></label>
+           <input name="username" id="loginusername"placeholder="Username" minlength="3" required>
+       </div>
+
+       <div class="input">
+           <label class="textlabel" for ="email"></label>
+           <input type="email"name="email" id="loginemail" placeholder="Email" required>
+       </div>
+
+       <div class="input">
+           <label class="textlabel" for ="password"></label>
+           <input type="password"name="password" id="loginpassword" placeholder="Password " maxlength="8" minlength="3" /*placeholder="password"*/ required>
+       </div>
+             
+       <div class="button">
+           <button class="button1"type="submit">Login</button>
+       </div>
+       <div id="authLinks">
+        <span class="authLink" id="showRegister">Sign Up /</span>
+        <span class="authLink" id="showLogin">Login</span>
+    </div>
+
+   </form>
+  </div>
+   
+
+   <div id="registerformdiv">
+   <form id="registerform">
+
+       <h1>Sign up</h1>
+
+       <div class="input">
+           <label class="textlabel"for ="username"></label>
+           <input name="username" id="signupusername"placeholder="Username" minlength="3" required>
+       </div>
+
+       <div class="input">
+           <label class="textlabel" for ="email"></label>
+           <input type="email"name="email" id="registeremail" placeholder="Email" required>
+       </div>
+
+       <div class="input">
+           <label class="textlabel" for ="password"></label>
+           <input type="password"name="password" id="registerpassword" placeholder="Password " maxlength="8" minlength="3" /*placeholder="password"*/ required>
+       </div>
+       
+       <div class="button">
+           <button class="button1"type="submit">Sign Up</button>
+       </div>
+         <div id="authLinks">
+        <span class="authLink" id="showRegister">Sign Up /</span>
+        <span class="authLink" id="showLogin">Login</span>
+    </div>
+   </form>
+   </div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
